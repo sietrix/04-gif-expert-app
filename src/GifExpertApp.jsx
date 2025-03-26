@@ -23,11 +23,10 @@ const onAddCategory = () => {
         <h1>GifExpertApp</h1>
 
         {/* Input */}
-        <AddCategory />
+        <AddCategory setCategories={ setCategories } />
 
 
         {/* Listado de Gig */}
-        <button onClick={onAddCategory}>Agregar</button>
         <ol>
           {
             categories.map( category => {
