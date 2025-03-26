@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { AddCategory } from "./components/AddCategory";
 
 
 // https://developers.giphy.com/
@@ -8,7 +9,6 @@ export const GifExpertApp = () => {
 
 const [categories, setCategories] = useState([ 'One Punch', 'Dragon Ball' ]);
 
-// console.log(categories);
 const onAddCategory = () => {
   // setCategories( cat => [...cat, 'Valorant']);
   setCategories(['Valorant', ...categories]);
@@ -23,6 +23,7 @@ const onAddCategory = () => {
         <h1>GifExpertApp</h1>
 
         {/* Input */}
+        <AddCategory />
 
 
         {/* Listado de Gig */}
