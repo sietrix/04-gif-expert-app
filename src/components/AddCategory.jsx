@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 
-export const AddCategory = ({ setCategories }) => {
+export const AddCategory = ({ onNewCategory }) => {
 
     const [ inputValue, setInputValue ] = useState( '' );
 
@@ -15,8 +15,10 @@ export const AddCategory = ({ setCategories }) => {
       event.preventDefault();
       // console.log(inputValue);
       if( inputValue.trim().length <= 1) return;
+     
       // insertamos el input primero y luego el resto que había
-      setCategories( categories => [ inputValue, ...categories]);
+      //setCategories( categories => [ inputValue, ...categories]);
+      onNewCategory( inputValue.trim() );
       setInputValue(''); // limpiamos el input
       
     }
