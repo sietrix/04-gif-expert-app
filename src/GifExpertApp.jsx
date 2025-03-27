@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { AddCategory } from "./components/AddCategory";
-import { GifGrid } from "./components/GifGrid";
+import { AddCategory, GifGrid } from "./components";
 
 
 
@@ -16,9 +15,6 @@ const onAddCategory = ( newCategory ) => {
   // setCategories( cat => [...cat, 'Valorant']);
   setCategories([newCategory, ...categories]);
 }
-
-
-
 
   return (
     <>
@@ -36,12 +32,6 @@ const onAddCategory = ( newCategory ) => {
           />
         ))
       }
-
-         
-
-
-
-
     </>
   )
 }
