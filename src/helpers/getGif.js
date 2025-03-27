@@ -3,8 +3,8 @@ export const getGifs = async( category ) => {
 
     // https://developers.giphy.com/
     const apiKey = 'rPmkD9LhBgMLCBpps3DJJ0tjNnl0KiLv';
-    const limit = 'limit=20';
-    const url = `https://api.giphy.com/v1/gifs/search?api_key=${ apiKey }&q=${ category }&${limit}`;
+    const limit = 10;
+    const url = `https://api.giphy.com/v1/gifs/search?api_key=${ apiKey }&q=${ category }&limit=${limit}`;
     const resp = await fetch( url );
     const { data } = await resp.json();
 
