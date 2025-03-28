@@ -48,5 +48,8 @@ __jest.setup.cjs__
 // En caso de necesitar la implementación del FetchAPI
 // import 'whatwg-fetch'; // <-- yarn add whatwg-fetch (NO LO INSTALO)
 ```
-
-
+-----------------------------------------------------------------
+__Installation prop-types__
+```
+npm install --save prop-types
+```
