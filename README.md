@@ -46,6 +46,7 @@ module.exports = {
 __jest.setup.cjs__
 ```
 // En caso de necesitar la implementación del FetchAPI
+// Ponerlo en la cabezera del archivo de test si no funciona en el archivo jest.setup.cjs
 // import 'whatwg-fetch'; // <-- yarn add whatwg-fetch (NO LO INSTALO)
 ```
 -----------------------------------------------------------------
