@@ -23,7 +23,7 @@ npm install --save-dev whatwg-fetch
   "test": "jest --watchAll"
 ```
 
-4. Crear la configuración de babel __babel.config.js__
+4. Crear la configuración de babel __babel.config.cjs__
 ```
 module.exports = {
     presets: [
