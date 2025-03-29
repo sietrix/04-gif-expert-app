@@ -14,7 +14,6 @@ export const AddCategory = ({ onNewCategory }) => {
 
     const onSubmit = (event) => {
       event.preventDefault();
-      // console.log(inputValue);
       if( inputValue.trim().length <= 1) return;
      
       // insertamos el input primero y luego el resto que había
@@ -28,7 +27,7 @@ export const AddCategory = ({ onNewCategory }) => {
   return (
 
 
-    <form onSubmit={ onSubmit }>
+    <form onSubmit={ onSubmit } aria-label='form'>
       <input 
           type="text"
           placeholder="Buscar gifs"
